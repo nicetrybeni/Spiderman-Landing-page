@@ -26,4 +26,3 @@ Assignment: =, +=, -=, *=, /=, etc.
 let hello = "Hello World!";
 let message = hello;
 console.log(message)
-//initialized comment
