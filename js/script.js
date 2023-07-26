@@ -23,6 +23,10 @@ Assignment: =, +=, -=, *=, /=, etc.
 // Open console in browser press F12 to open CONSOLE.
 
 // "+" The unary plus operator in JavaScript converts a string representation of an integer into an actual numeric value.
-let hello = "Hello World!";
-let message = hello;
-console.log(message)
+let hour = 20;
+if (hour < 18) {
+    greeting = "Maliit";
+} else {
+    greeting = "Malaki";
+}
+console.log(greeting)
