@@ -23,7 +23,7 @@ Assignment: =, +=, -=, *=, /=, etc.
 // Open console in browser press F12 to open CONSOLE.
 
 // "+" The unary plus operator in JavaScript converts a string representation of an integer into an actual numeric value.
-function favoriteAnimal(animal) {
-    return animal + " is my favorite animal"
-}
-console.log(favoriteAnimal('Dog'))
+function capitalize(str) {
+    return str.toUpperCase();
+} 
+console.log(capitalize("joseph"));
