@@ -38,18 +38,25 @@ Assignment: =, +=, -=, *=, /=, etc.
 }
 */
 //test 
-function fizzBuzz() {
-   for(let i = 1; i <= 100; i++) {
-      if( i % 3 === 0 && i % 5 ===0){
-         console.log("FizzBuzz");
-      }
-      else if( i % 3 === 0) {
-         console.log("Fizz")
-      }
-      else if( i % 5 === 0) {
-         console.log("Buzz")
-      }else {
-         console.log(i)
-      }
+function fizzBuzz(n) {
+   const result = [];
+ 
+   for (let i = 1; i <= n; i++) {
+     if (i % 3 === 0 && i % 5 === 0) {
+       result.push("FizzBuzz");
+     } else if (i % 3 === 0) {
+       result.push("Fizz");
+     } else if (i % 5 === 0) {
+       result.push("Buzz");
+     } else {
+       result.push(i.toString()); // Convert the number to a string before pushing
+     }
    }
-}
+ 
+   return result;
+ }
+// If u want to use console, type fizzBuzz(3) 3 is the number for iteration.
+const n = 3;
+const output = fizzBuzz(n);
+console.log(output); // Output: ["1", "2", "Fizz"]
+ 
